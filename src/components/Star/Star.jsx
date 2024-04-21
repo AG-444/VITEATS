@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import full from "../../assets/star (1).png";
 import half from "../../assets/rating.png";
 import list from "../../Constanst";
 
 const Star = ({ id }) => {
   const restaurant = list.find((l) => id === l.id);
-  const ratings = restaurant.ratings;
+  const [ratings, setRatings] = useState([]);
+  useEffect(() => {
+    const newRatings = JSON.parse(
+      localStorage.getItem(`newRatings${parseInt(id)}`)
+    );
+    if (newRatings) {
+      setRatings(newRatings);
+      // console.log("caught stars");
+    } else {
+      setRatings(restaurant.ratings);
+      // console.log("caught wrong");
+    }
+  }, []);
   var sum = 0;
   for (var i = 0; i < ratings.length; i++) {
     sum += ratings[i];

@@ -1,19 +1,30 @@
 import React, { useState } from "react";
-import { Rating } from "react-simple-star-rating";
-
-const StarRate = () => {
-  const [value, setValue] = useState();
+import { FaStar } from "react-icons/fa";
+import "./StarRate.css";
+const StarRate = ({ rating, setRating }) => {
+  const [hover, setHover] = useState(null);
   return (
     <div>
-      <Rating
-        name="half-rating"
-        defaultValue={2.5}
-        precision={0.5}
-        value={value}
-        onChange={(event, newValue) => {
-          setValue(newValue);
-        }}
-      />
+      {[...Array(5)].map((star, index) => {
+        const currentRating = index + 1;
+        return (
+          <label>
+            <input
+              type="radio"
+              name="rating"
+              value={currentRating}
+              onClick={() => setRating(currentRating)}
+            />
+            <FaStar
+              className="star"
+              size={50}
+              color={currentRating <= (hover || rating) ? "yellow" : "grey"}
+              onMouseEnter={() => setHover(currentRating)}
+              onMouseLeave={() => setHover(null)}
+            />
+          </label>
+        );
+      })}
     </div>
   );
 };

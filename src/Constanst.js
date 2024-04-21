@@ -10,7 +10,7 @@ const list = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum labore consectetur suscipit vero accusantium, odit omnis culpa eaque incidunt!",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum labore consectetur suscipit vero accusantium, odit omnis culpa eaque incidunt!",
     ],
-    ratings: [3, 4, 5, 4, 5, 5],
+    ratings: [1, 1, 1],
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const list = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum labore consectetur suscipit vero accusantium, odit omnis culpa eaque incidunt!",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum labore consectetur suscipit vero accusantium, odit omnis culpa eaque incidunt!",
     ],
-    ratings: [3, 4, 5, 4, 5, 5],
+    ratings: [1, 1, 1],
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const list = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum labore consectetur suscipit vero accusantium, odit omnis culpa eaque incidunt!",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum labore consectetur suscipit vero accusantium, odit omnis culpa eaque incidunt!",
     ],
-    ratings: [3, 4, 5, 4, 5, 5],
+    ratings: [1, 1, 1],
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ const list = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum labore consectetur suscipit vero accusantium, odit omnis culpa eaque incidunt!",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum labore consectetur suscipit vero accusantium, odit omnis culpa eaque incidunt!",
     ],
-    ratings: [3, 4, 5, 4, 5, 5],
+    ratings: [1, 1, 1],
   },
 ];
 export default list;

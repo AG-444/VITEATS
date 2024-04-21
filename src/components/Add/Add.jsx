@@ -1,11 +1,12 @@
-import { Rating } from "react-simple-star-rating";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import list from "../../Constanst.js";
 import "./Add.css";
+import StarRate from "../Star/StarRate.jsx";
 const Add = () => {
-  const [value, setValue] = useState();
   const { id } = useParams();
+  const [rating, setRating] = useState(0);
+  const [ratings, setRatings] = useState([]);
   const [reviews, setReviews] = useState([]);
   const [review, setReview] = useState("");
   function handleSubmit() {
@@ -16,11 +17,14 @@ const Add = () => {
   }
   function handleSubmit() {
     reviews.push(review);
+    ratings.push(rating);
     localStorage.setItem(`newReviews${id}`, JSON.stringify(reviews));
+    localStorage.setItem(`newRatings${id}`, JSON.stringify(ratings));
   }
   useEffect(() => {
     const restuarant = list.find((l) => parseInt(id) === l.id);
     setReviews(restuarant.reviews);
+    setRatings(restuarant.ratings);
   });
   return (
     <div className="add">
@@ -32,17 +36,9 @@ const Add = () => {
         rows="10"
         onChange={handleChange}
       ></textarea>
-      <Rating
-        name="half-rating"
-        defaultValue={2.5}
-        precision={0.5}
-        value={value}
-        onChange={(event, newValue) => {
-          setValue(newValue);
-        }}
-      />
+      <StarRate rating={rating} setRating={setRating} />
       <Link to={`/${parseInt(id)}`}>
-        <button onClick={handleSubmit}></button>
+        <button onClick={handleSubmit}>Submit</button>
       </Link>
     </div>
   );

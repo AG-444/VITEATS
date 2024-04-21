@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import list from "../../Constanst.js";
 import { Link } from "react-router-dom";
 import "./List.css";
 import Star from "../Star/Star.jsx";
 const List = () => {
+  // useEffect(() => {
+  //   localStorage.clear();
+  // });
   return (
     <div>
       {list.map((l) => (
