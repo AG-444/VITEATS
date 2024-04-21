@@ -2,6 +2,7 @@ import React from "react";
 import list from "../../Constanst.js";
 import { Link } from "react-router-dom";
 import "./List.css";
+import Star from "../Star/Star.jsx";
 const List = () => {
   return (
     <div>
@@ -11,6 +12,7 @@ const List = () => {
           <div>
             <h2>{l.name}</h2>
             <p>{l.description}</p>
+            <Star id={l.id} />
             <Link to={`/${l.id}`}>
               <button>Visit</button>
             </Link>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import Star from "../Star/Star.jsx";
 import list from "../../Constanst.js";
 import "./Review.css";
 const Review = () => {
@@ -27,6 +28,7 @@ const Review = () => {
         <div>
           <h1>{name}</h1>
           <p>{description}</p>
+          <Star id={parseInt(id)} />
           <Link to={`/edit/${parseInt(id)}`}>
             <button>Add your Review</button>
           </Link>
