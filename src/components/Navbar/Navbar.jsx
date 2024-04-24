@@ -1,15 +1,18 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.jpg";
-import { HashLink as Link } from "react-router-hash-link";
+import { Link } from "react-router-dom"; // Import Link
 const Navbar = () => {
   return (
     <div>
       <header class="header">
-        <a href="" class="logo">
-          <img src={logo} alt="logo" class="logo_img" />
-          VITeats.
-        </a>
+        {/* Wrap the logo in Link component */}
+        <Link to="/">
+          <a href="" class="logo"> {/* Remove href="" */}
+            <img src={logo} alt="logo" class="logo_img" />
+            VITeats.
+          </a>
+        </Link>
         <nav class="navbar">
           <Link to="/">
             <a>Home</a>
