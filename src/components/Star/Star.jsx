@@ -43,9 +43,9 @@ const Star = ({ id }) => {
       }}
     >
       {ratingsArray.map(function () {
-        return <img style={{ height: "15px" }} src={full} alt="" />;
+        return <img style={{ height: "20px" }} src={full} alt="" />;
       })}
-      {halfStars ? <img style={{ height: "15px" }} src={half} alt="" /> : null}
+      {/* {halfStars ? <img style={{ height: "15px" }} src={half} alt="" /> : null} */}
     </div>
   );
 };

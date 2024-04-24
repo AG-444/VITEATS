@@ -1,0 +1,11 @@
+footer.copyright {
+  padding: 3rem 0;
+  background: rgb(74, 42, 30);
+  color: rgb(255, 249, 204);
+  text-align: center;
+  font-size: 0.75rem;
+}
+footer.copyright a {
+  color: #f9ea42;
+  text-decoration: none;
+}
