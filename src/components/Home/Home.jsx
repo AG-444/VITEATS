@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link
 import "./Home.css";
 import Navbar from "../Navbar/Navbar";
 import oneworld from "../../assets/oneworld.jpg";
@@ -6,6 +7,7 @@ import dc from "../../assets/dc.jpg";
 import fc from "../../assets/fc.jpg";
 import Star from "../Star/Star";
 import Footer from "../Footer/Footer";
+
 const Home = () => {
   return (
     <div>
@@ -60,8 +62,8 @@ const Home = () => {
             <div class="content">
               <h3>One Food World</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-                expedita.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veniam, expedita.
               </p>
             </div>
           </div>
@@ -91,7 +93,10 @@ const Home = () => {
           </div>
         </div>
         <div class="btn-container">
-          <button class="btn">See More</button>
+          {/* Use Link component to redirect to Explore page */}
+          <Link to="/list">
+            <button class="btn">See More</button>
+          </Link>
         </div>
       </section>
       <section class="rest_pics" id="outside">
@@ -138,7 +143,10 @@ const Home = () => {
           </div>
         </div>
         <div class="btn-container">
-          <button class="btn">See More</button>
+          {/* Use Link component to redirect to Explore page */}
+          <Link to="/list">
+            <button class="btn">See More</button>
+          </Link>
         </div>
       </section>
     </div>
