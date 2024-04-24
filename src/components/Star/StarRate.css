@@ -1,6 +1,9 @@
-input[type="radio"] {
+.radio {
   display: none;
 }
 .star {
   cursor: pointer;
+}
+.rating {
+  display: flex;
 }

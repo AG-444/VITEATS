@@ -9,8 +9,8 @@ const Review = () => {
   const [name, setName] = useState("default");
   const [description, setDescription] = useState("default");
   const [review, setReview] = useState([]);
+  const [users, setUsers] = useState([]);
   const [image, setImage] = useState("default");
-  var st = 0;
   const [tempratings, setTeampRatings] = useState([]);
   useEffect(() => {
     const restuarant = list.find((l) => parseInt(id) === l.id);
@@ -22,14 +22,19 @@ const Review = () => {
     } else {
       setReview(restuarant.reviews);
     }
+    const newUsers = JSON.parse(localStorage.getItem(`newUsers${id}`));
+    if (newUsers) {
+      setUsers(newUsers);
+    } else {
+      console.log("not");
+      setUsers(restuarant.users);
+    }
     const newTemp = JSON.parse(localStorage.getItem(`newRatings${id}`));
     if (newTemp) {
       setTeampRatings(newTemp);
     } else {
       setTeampRatings(restuarant.ratings);
     }
-    console.log(tempratings.length);
-    console.log(review[3]);
     setImage(restuarant.image);
   }, []);
   return (
@@ -49,7 +54,8 @@ const Review = () => {
         {review.map((r, index) => (
           <div key={index} className="card">
             <StarOne num={tempratings[index]} />
-            <p className="review">{r}</p>
+            <p>{r}</p>
+            <p>{users[index]}</p>
           </div>
         ))}
       </div>

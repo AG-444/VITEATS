@@ -10,6 +10,7 @@ const list = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum labore consectetur suscipit vero accusantium, odit omnis culpa eaque incidunt!",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum labore consectetur suscipit vero accusantium, odit omnis culpa eaque incidunt!",
     ],
+    users: ["Nipun", "Anagha", "Aditya"],
     ratings: [1, 1, 1],
   },
   {
@@ -23,6 +24,7 @@ const list = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum labore consectetur suscipit vero accusantium, odit omnis culpa eaque incidunt!",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum labore consectetur suscipit vero accusantium, odit omnis culpa eaque incidunt!",
     ],
+    users: ["Nipun", "Anagha", "Aditya"],
     ratings: [1, 1, 1],
   },
   {
@@ -36,6 +38,7 @@ const list = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum labore consectetur suscipit vero accusantium, odit omnis culpa eaque incidunt!",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum labore consectetur suscipit vero accusantium, odit omnis culpa eaque incidunt!",
     ],
+    users: ["Nipun", "Anagha", "Aditya"],
     ratings: [1, 1, 1],
   },
   {
@@ -49,6 +52,7 @@ const list = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum labore consectetur suscipit vero accusantium, odit omnis culpa eaque incidunt!",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est cum labore consectetur suscipit vero accusantium, odit omnis culpa eaque incidunt!",
     ],
+    users: ["Nipun", "Anagha", "Aditya"],
     ratings: [1, 1, 1],
   },
 ];
