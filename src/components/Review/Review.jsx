@@ -25,7 +25,6 @@ const Review = () => {
     const newTemp = JSON.parse(localStorage.getItem(`newRatings${id}`));
     if (newTemp) {
       setTeampRatings(newTemp);
-      // console.log("fuck");
     } else {
       setTeampRatings(restuarant.ratings);
     }
@@ -48,7 +47,7 @@ const Review = () => {
       </div>
       <div className="reviews">
         {review.map((r, index) => (
-          <div key={index}>
+          <div key={index} className="card">
             <StarOne num={tempratings[index]} />
             <p className="review">{r}</p>
           </div>

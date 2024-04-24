@@ -9,7 +9,6 @@ import Footer from "../Footer/Footer";
 const Home = () => {
   return (
     <div>
-      <Navbar />
       <div class="main_img" id="home">
         <h1>
           Find Taste
@@ -142,7 +141,6 @@ const Home = () => {
           <button class="btn">See More</button>
         </div>
       </section>
-      <Footer />
     </div>
   );
 };
