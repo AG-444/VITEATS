@@ -42,12 +42,12 @@ const About = () => {
         </div>
         <div className="member">
           <img src={garg} alt="" />
-          <h2>Aditya Agarwal</h2>
+          <h2>Aditya Garg</h2>
           <h3>Web Developer</h3>
         </div>
         <div className="member">
           <img src={agarwal} alt="" />
-          <h2>Aditya Garg</h2>
+          <h2>Aditya Agarwal</h2>
           <h3>Web Developer</h3>
         </div>
       </div>
