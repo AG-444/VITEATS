@@ -8,6 +8,11 @@ import bbq from "./assets/bbqNation.jpg";
 import pizza from "./assets/pizzaHut.jpg";
 import zaitoon from "./assets/Zaitoon.jpg";
 import mcds from "./assets/mcds.jpg";
+import wraps from "./assets/wraps&fries.jpg";
+import limra from "./assets/limraGarden.jpg";
+import drunken from "./assets/DrunkenMonkey.jpg";
+import kfc from "./assets/kfc.jpg";
+import main from "./assets/VITmainCanteen.jpg";
 const list = [
   {
     id: 1,
@@ -141,6 +146,76 @@ const list = [
     name: "McDonald's",
     description:
       "Iconic burgers, crispy fries, quick service, bustling atmosphere, a convenient spot for college munchies.",
+    reviews: [
+      "The food here is consistently fresh and flavorful. Whether you're grabbing a quick bite or enjoying a leisurely meal, you won't be disappointed.",
+      "Great atmosphere and tasty dishes make this spot a favorite for any occasion. The menu offers something for everyone, and the service is top-notch",
+      "I keep coming back for more! The quality of the food is unmatched, and the prices are reasonable. A definite must-try for any food lover.",
+    ],
+    users: ["Nipun", "Anagha", "Aditya"],
+    ratings: [2, 4, 3],
+  },
+  {
+    id: 11,
+    image: drunken,
+    name: "Drunken Monkey",
+    description:
+      "Varied drinks, cozy ambiance, friendly staff, perfect for unwinding or catching up with friends.",
+    reviews: [
+      "The food here is consistently fresh and flavorful. Whether you're grabbing a quick bite or enjoying a leisurely meal, you won't be disappointed.",
+      "Great atmosphere and tasty dishes make this spot a favorite for any occasion. The menu offers something for everyone, and the service is top-notch",
+      "I keep coming back for more! The quality of the food is unmatched, and the prices are reasonable. A definite must-try for any food lover.",
+    ],
+    users: ["Nipun", "Anagha", "Aditya"],
+    ratings: [2, 4, 3],
+  },
+  {
+    id: 12,
+    image: kfc,
+    name: "KFC",
+    description:
+      "Crispy chicken, savory sides, quick service, casual dining, satisfying cravings for comfort food.",
+    reviews: [
+      "The food here is consistently fresh and flavorful. Whether you're grabbing a quick bite or enjoying a leisurely meal, you won't be disappointed.",
+      "Great atmosphere and tasty dishes make this spot a favorite for any occasion. The menu offers something for everyone, and the service is top-notch.",
+      "I keep coming back for more! The quality of the food is unmatched, and the prices are reasonable. A definite must-try for any food lover.",
+    ],
+    users: ["Nipun", "Anagha", "Aditya"],
+    ratings: [2, 4, 3],
+  },
+  {
+    id: 13,
+    image: limra,
+    name: "Limra Garden",
+    description:
+      "Varied menu, cozy atmosphere, friendly service, perfect for gathering with friends or family.",
+    reviews: [
+      "The food here is consistently fresh and flavorful. Whether you're grabbing a quick bite or enjoying a leisurely meal, you won't be disappointed.",
+      "Great atmosphere and tasty dishes make this spot a favorite for any occasion. The menu offers something for everyone, and the service is top-notch",
+      "I keep coming back for more! The quality of the food is unmatched, and the prices are reasonable. A definite must-try for any food lover.",
+    ],
+    users: ["Nipun", "Anagha", "Aditya"],
+    ratings: [2, 4, 3],
+  },
+  {
+    id: 14,
+    image: wraps,
+    name: "Wraps and Fries",
+    description:
+      "Tasty wraps, crispy fries, quick bites, casual setting, satisfying hunger with flavorful combos.",
+    reviews: [
+      "The food here is consistently fresh and flavorful. Whether you're grabbing a quick bite or enjoying a leisurely meal, you won't be disappointed.",
+      "Great atmosphere and tasty dishes make this spot a favorite for any occasion. The menu offers something for everyone, and the service is top-notch",
+      "I keep coming back for more! The quality of the food is unmatched, and the prices are reasonable. A definite must-try for any food lover.",
+    ],
+    users: ["Nipun", "Anagha", "Aditya"],
+    ratings: [2, 4, 3],
+  },
+  {
+    id: 15,
+    image: main,
+    name: "VIT Main Canteen",
+    description:
+      "Diverse menu, bustling atmosphere, budget-friendly options, hub for student meals and socializing.",
     reviews: [
       "The food here is consistently fresh and flavorful. Whether you're grabbing a quick bite or enjoying a leisurely meal, you won't be disappointed.",
       "Great atmosphere and tasty dishes make this spot a favorite for any occasion. The menu offers something for everyone, and the service is top-notch",
