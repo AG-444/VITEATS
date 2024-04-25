@@ -7,7 +7,7 @@ const Footer = () => {
       <footer class="copyright">
         <div>
           Copyright © 2024 .All rights reserved by{" "}
-          <Link to="#about">
+          <Link to="/about">
             <a>VITeats Team</a>.
           </Link>
         </div>

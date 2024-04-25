@@ -1,23 +1,67 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom"; // Import Link
 import "./Home.css";
-import Navbar from "../Navbar/Navbar";
+import { motion, useInView, useAnimation } from "framer-motion";
 import oneworld from "../../assets/oneworld.jpg";
 import dc from "../../assets/dc.jpg";
 import fc from "../../assets/fc.jpg";
 import Star from "../Star/Star";
-import Footer from "../Footer/Footer";
 
 const Home = () => {
+  const controls = useAnimation();
+  const controls2 = useAnimation();
+  const controls3 = useAnimation();
+  const controls4 = useAnimation();
+  const featRef = useRef(null);
+  const insideRef = useRef(null);
+  const outsideRef = useRef(null);
+  const h1Ref = useRef(null);
+  const inView = useInView(featRef, { once: true });
+  if (inView) {
+    controls.start("visible");
+  }
+  const inView2 = useInView(insideRef, { once: true });
+  if (inView2) {
+    controls2.start("visible");
+  }
+  const inView3 = useInView(outsideRef, { once: true });
+  if (inView3) {
+    controls3.start("visible");
+  }
+  const inView4 = useInView(h1Ref, { once: true });
+  if (inView4) {
+    controls4.start("visible");
+  }
   return (
     <div>
       <div class="main_img" id="home">
-        <h1>
+        <motion.h1
+          ref={h1Ref}
+          variants={{
+            hidden: { opacity: 0.5, x: -100 },
+            visible: { opacity: 1, x: 0 },
+          }}
+          initial="hidden"
+          animate={controls4}
+          transition={{ duration: 1 }}
+        >
           Find Taste
-          <br /> Near you
-        </h1>
+          <br />
+          Near you
+        </motion.h1>
       </div>
-      <section class="features" id="features">
+      <motion.section
+        class="features"
+        id="features"
+        ref={featRef}
+        variants={{
+          hidden: { opacity: 0.5, x: -100 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        initial="hidden"
+        animate={controls}
+        transition={{ duration: 1 }}
+      >
         <h1 class="heading" id="features-heading">
           Features
         </h1>
@@ -49,8 +93,19 @@ const Home = () => {
             </p>
           </div>
         </div>
-      </section>
-      <section class="rest_pics" id="inside">
+      </motion.section>
+      <motion.section
+        class="rest_pics"
+        id="inside"
+        ref={insideRef}
+        variants={{
+          hidden: { opacity: 0.5, x: -100 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        initial="hidden"
+        animate={controls2}
+        transition={{ duration: 1 }}
+      >
         <h1 class="heading fade-in">
           {" "}
           Inside<span>VIT</span>
@@ -62,8 +117,8 @@ const Home = () => {
             <div class="content">
               <h3>One Food World</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Veniam, expedita.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+                expedita.
               </p>
             </div>
           </div>
@@ -98,8 +153,19 @@ const Home = () => {
             <button class="btn">See More</button>
           </Link>
         </div>
-      </section>
-      <section class="rest_pics" id="outside">
+      </motion.section>
+      <motion.section
+        class="rest_pics"
+        id="outside"
+        ref={outsideRef}
+        variants={{
+          hidden: { opacity: 0.5, x: -100 },
+          visible: { opacity: 1, x: 0 },
+        }}
+        initial="hidden"
+        animate={controls3}
+        transition={{ duration: 1 }}
+      >
         <h1 class="heading fade-in">
           {" "}
           Outside<span>VIT</span>
@@ -148,7 +214,7 @@ const Home = () => {
             <button class="btn">See More</button>
           </Link>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 };

@@ -2,27 +2,59 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #632106;
   gap: 2rem;
-  margin-bottom: 50px;
+  /* background: url("../../assets/navbar_img.png") center/cover no-repeat; */
+  background-color: #ffc74d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  height: 80vh;
+  margin: 20px 90px;
 }
 .item > div {
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: start;
+  padding: 20px;
 }
 .item > div > p {
-  width: 50%;
+  width: 90%;
   text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .reviews {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
+  margin: 0 60px;
+  margin-top: 50px;
 }
 .card {
-  border: 2px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: #632106;
   padding: 20px;
+  margin: 30px;
+  background-color: #fdf29e;
+  margin-bottom: 60px;
+  margin-top: 10px;
+}
+.details {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+.details .stars {
+  margin-right: 200px;
+}
+.item .btn {
+  height: 35px;
+  width: 150px;
+}
+.item .restaurant {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 90%;
+  margin-left: 30px;
 }

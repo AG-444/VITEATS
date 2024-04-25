@@ -8,7 +8,9 @@ const Navbar = () => {
       <header class="header">
         {/* Wrap the logo in Link component */}
         <Link to="/">
-          <a href="" class="logo"> {/* Remove href="" */}
+          <a href="" class="logo">
+            {" "}
+            {/* Remove href="" */}
             <img src={logo} alt="logo" class="logo_img" />
             VITeats.
           </a>

@@ -1,10 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
 import { Link, useParams } from "react-router-dom";
 import list from "../../Constanst.js";
 import "./Add.css";
 import StarRate from "../Star/StarRate.jsx";
 import ratingVector from "../../assets/ratingVector-removebg-preview.png";
 const Add = () => {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
+  const controls = useAnimation();
+  if (inView) {
+    controls.start("visible");
+  }
   const { id } = useParams();
   const [user, setUser] = useState("");
   const [rating, setRating] = useState(0);
@@ -36,7 +43,17 @@ const Add = () => {
     setUsers(restuarant.users);
   });
   return (
-    <div className="add">
+    <motion.div
+      className="add"
+      ref={ref}
+      variants={{
+        hidden: { opacity: 0.5, x: -100 },
+        visible: { opacity: 1, x: 0 },
+      }}
+      initial="hidden"
+      animate={controls}
+      transition={{ duration: 1 }}
+    >
       <div className="add-container">
         <img src={ratingVector} alt="" />
         <form className="form">
@@ -58,7 +75,7 @@ const Add = () => {
           </Link>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

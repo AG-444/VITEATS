@@ -42,3 +42,6 @@ header {
   color: rgb(147, 53, 32);
   transform: scale(1.03);
 }
+.header a {
+  text-decoration: none;
+}

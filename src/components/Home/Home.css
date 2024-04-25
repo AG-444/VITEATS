@@ -31,6 +31,8 @@ header {
   margin-bottom: 5rem;
   font-size: 5rem;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 1);
+  text-align: left;
+  margin-left: 50px;
 }
 #features-heading {
   margin-top: 3rem;
@@ -93,6 +95,7 @@ header {
   height: 13rem;
   width: 100%;
   object-fit: cover;
+  margin-bottom: 20px;
 }
 
 .rest_pics .box-container .box .content {
