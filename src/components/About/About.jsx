@@ -4,7 +4,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import nipun from "../../assets/nipun.jpg";
 import anagha from "../../assets/anagha.png";
 import garg from "../../assets/garg.jpeg";
-import { GrAddCircle } from "react-icons/gr";
+import agarwal from "../../assets/agarwal.jpg1.jpg";
 const About = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
@@ -26,9 +26,8 @@ const About = () => {
     >
       <h1 className="heading">Our Team</h1>
       <p className="description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nihil
-        minima iure quisquam recusandae est quia facilis numquam necessitatibus
-        voluptate?
+        Meet our dynamic web development team, a synergy of innovation,
+        expertise, and outstanding customer service.
       </p>
       <div className="team-container">
         <div className="member">
@@ -47,7 +46,7 @@ const About = () => {
           <h3>Web Developer</h3>
         </div>
         <div className="member">
-          <img src="https://picsum.photos/250/220" alt="" />
+          <img src={agarwal} alt="" />
           <h2>Aditya Garg</h2>
           <h3>Web Developer</h3>
         </div>

@@ -1,13 +1,19 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom"; // Import Link
 import "./Home.css";
 import { motion, useInView, useAnimation } from "framer-motion";
 import oneworld from "../../assets/oneworld.jpg";
 import dc from "../../assets/dc.jpg";
 import fc from "../../assets/fc.jpg";
+import pizza from "../../assets/pizzaHut.jpg";
+import zaitoon from "../../assets/Zaitoon.jpg";
+import mcds from "../../assets/mcds.jpg";
 import Star from "../Star/Star";
 
 const Home = () => {
+  // useEffect(() => {
+  //   localStorage.clear();
+  // });
   const controls = useAnimation();
   const controls2 = useAnimation();
   const controls3 = useAnimation();
@@ -70,8 +76,8 @@ const Home = () => {
             <i class="bx bx-buildings"></i>
             <h3>Restaurants Nearby</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Deserunt, earum!
+              Find the best restaurants inside and nearby VIT,Vellore that
+              matches what you crave!
             </p>
           </div>
 
@@ -79,8 +85,8 @@ const Home = () => {
             <i class="bx bxs-star-half"></i>
             <h3>Star Ratings</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Deserunt, earum!
+              View the ratings and feedback of every restaurant and find the
+              best one!
             </p>
           </div>
 
@@ -88,8 +94,7 @@ const Home = () => {
             <i class="bx bx-edit"></i>
             <h3>Write Reviews</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Deserunt, earum!
+              Write your own review and give your rating for each restaurant!
             </p>
           </div>
         </div>
@@ -117,32 +122,32 @@ const Home = () => {
             <div class="content">
               <h3>One Food World</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-                expedita.
+                "Indulge in quick bites and coffee blends at our vibrant café,
+                perfect for casual dining."
               </p>
             </div>
           </div>
           <div class="box">
             <img class="picture" src={fc} alt="F.C." />
-            <Star id={1} />
+            <Star id={2} />
 
             <div class="content">
-              <h3>F.C.</h3>
+              <h3>Food Court</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-                expedita.
+                "Campus eatery offering quick bites and coffee for students,
+                fostering a vibrant atmosphere for socializing."
               </p>
             </div>
           </div>
           <div class="box">
             <img class="picture" src={dc} alt="D.C. Bakery" />
-            <Star id={1} />
+            <Star id={3} />
 
             <div class="content">
-              <h3>D.C. Bakery</h3>
+              <h3>DC Bakery</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-                expedita.
+                "Freshly baked goods in a cozy setting, offering delightful
+                treats and aromatic coffee for patrons."
               </p>
             </div>
           </div>
@@ -172,38 +177,38 @@ const Home = () => {
         </h1>
         <div class="box-container">
           <div class="box">
-            <img class="picture" src={oneworld} alt="One Food World" />
-            <Star id={1} />
+            <img class="picture" src={pizza} alt="One Food World" />
+            <Star id={9} />
 
             <div class="content">
-              <h3>One Food World</h3>
+              <h3>Pizza Hut</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-                expedita.
+                "Fresh dough, cheesy toppings, crispy crusts, casual setting, a
+                go-to for satisfying pizza cravings near college."
               </p>
             </div>
           </div>
           <div class="box">
-            <img class="picture" src={fc} alt="One Food World" />
-            <Star id={1} />
+            <img class="picture" src={zaitoon} alt="One Food World" />
+            <Star id={8} />
 
             <div class="content">
-              <h3>F.C.</h3>
+              <h3>Zaitoon</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-                expedita.
+                "Gourmet cuisine, impeccable service, elegant ambiance, ideal
+                for special occasions or refined dining experiences."
               </p>
             </div>
           </div>
           <div class="box">
-            <img class="picture" src={dc} alt="One Food World" />
-            <Star id={1} />
+            <img class="picture" src={mcds} alt="One Food World" />
+            <Star id={10} />
 
             <div class="content">
-              <h3>D.C. Bakery</h3>
+              <h3>McDonald's</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-                expedita.
+                "Iconic burgers, crispy fries, quick service, bustling
+                atmosphere, a convenient spot for college munchies."
               </p>
             </div>
           </div>

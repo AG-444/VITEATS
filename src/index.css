@@ -3,6 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
 body {
+  font-family: "EB Garamond", serif;
   background-color: #fff9cc;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(99, 33, 6);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(253, 242, 158);
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 10px;
 }

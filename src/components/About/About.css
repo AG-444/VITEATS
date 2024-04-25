@@ -2,17 +2,19 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 70px;
+  margin: 70px 30px;
 }
 .member {
   /* border: 2px solid black; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #fdf29e;
+  border-radius: 20px;
+  overflow-y: hidden;
 }
 .member img {
   margin-bottom: 20px;
   height: 200px;
-  width: 230px;
+  width: 250px;
 }
 .member h3 {
   margin-bottom: 20px;
@@ -32,4 +34,7 @@ h3 {
   width: 50%;
   margin-left: 25%;
   margin-top: -20px;
+}
+.about .heading {
+  font-size: 3rem;
 }
